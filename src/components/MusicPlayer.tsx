@@ -13,10 +13,10 @@ const MusicPlayer = ({ autoPlay = false }: MusicPlayerProps) => {
   useEffect(() => {
     // Use a royalty-free nasheed-style ambient audio
     audioRef.current = new Audio(
-      "https://cdn.pixabay.com/audio/2022/10/25/audio_33a2ab3263.mp3"
+      "new wedding nasheed.mpeg"
     );
     audioRef.current.loop = true;
-    audioRef.current.volume = 0.3;
+    audioRef.current.volume = 0.2;
 
     return () => {
       if (audioRef.current) {
